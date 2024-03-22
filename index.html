@@ -14,27 +14,57 @@
 </head>
 
 <body>
-  <main>
-    <header>
-      <img src="./assets/logo.svg" alt="Logo da loja Mercadeko" class="logo">
-      <div class="search">
-        <input type="text" placeholder="Pesquisar...">
-        <i data-lucide="search"></i>
-      </div>
-      <div class="profile">
-        <img src="https://github.com/diego3g.png" alt="Avatar do usuário" class="avatar">
-        <div class="separator"></div>
-        <div>
-          <span>carrinho</span>
-          <div class="cart">
-            <i data-lucide="shopping-cart"></i>
-          </div>
-          <div class="counter">0</div>
-          <i data-lucide="menu" class="menu"></i>
+  <header>
+    <img src="./assets/logo.svg" alt="Logo da loja Mercadeko" class="logo">
+    <div class="search">
+      <input type="text" placeholder="Pesquisar...">
+      <i data-lucide="search"></i>
+    </div>
+    <div class="profile">
+      <img src="https://i.pravatar.cc/150?img=12" alt="Avatar do usuário" class="avatar">
+      <div class="separator"></div>
+      <div>
+        <span>carrinho</span>
+        <div class="cart">
+          <i data-lucide="shopping-cart"></i>
         </div>
-
+        <div class="counter">0</div>
+        <i data-lucide="menu" class="menu"></i>
       </div>
-    </header>
+
+    </div>
+  </header>
+  <main>
+    <h1>Produtos</h1>
+
+    <div class="line"></div>
+
+    <div class="carousel">
+      <button>
+        <i data-lucide="chevron-left"></i>
+      </button>
+      <div class="products">
+        <div class="product-hidden">
+          <img src="./assets/images/saude.svg" alt="">
+          <span>Saúde</span>
+        </div>
+        <div>
+          <img src="./assets/images/utensilios.svg" alt="">
+          <span>Utensílios</span>
+        </div>
+        <div class="product-hidden">
+          <img src="./assets/images/recipientes.svg" alt="">
+          <span>Recipientes</span>
+        </div>
+        <div class="product-hidden">
+          <img src="./assets/images/acessorios.svg" alt="">
+          <span>Acessórios</span>
+        </div>
+      </div>
+      <button>
+        <i data-lucide="chevron-right"></i>
+      </button>
+    </div>
   </main>
 
   <!-- icons -->
