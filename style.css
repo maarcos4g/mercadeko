@@ -115,7 +115,7 @@ header div {
 @media (max-width: 500px) {
   header {
     width: 100%;
-    height: 110px;
+    height: 80px;
     background-color: #3EB461;
     display: flex;
     align-items: center;
@@ -128,9 +128,21 @@ header div {
   }
 
   .search {
-    max-width: 230px;
+    max-width: 180px;
     padding: 8px;
     height: 28px;
+  }
+
+  .search input {
+    font-size: 14px;
+  }
+
+  .search input::placeholder {
+    font-size: 14px;
+  }
+
+  .search i {
+    width: 8px;
   }
 
   .profile {
@@ -151,5 +163,8 @@ header div {
     height: 24px;
     cursor: pointer;
     color: #6D6D6D;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
   }
 }
