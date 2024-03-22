@@ -105,3 +105,31 @@ header div {
   justify-content: center;
   border-radius: 60px;
 }
+
+/* Responsivo (Mobile) */
+@media only screen and (max-device-width: 500px) {
+  header {
+    width: 100%;
+    height: 120px;
+    background-color: #3EB461;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .search {
+    max-width: 300px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .profile div span {
+    display: none;
+  }
+}
