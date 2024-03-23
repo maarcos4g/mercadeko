@@ -6,8 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +39,7 @@ header div {
 .search input {
   border: none;
   outline: none;
-  width: 60%;
+  width: 50%;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
 }
@@ -141,6 +140,7 @@ main h1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   column-gap: 48px;
+  margin: 0px 20px;
 }
 
 .products div {
@@ -148,6 +148,70 @@ main h1 {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-top: 27px;
+}
+
+.products div span {
+  font: 30px 'Rowdies', sans-serif;
+  text-transform: uppercase;
+  color: #3EB461;
+}
+
+.nav {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav i {
+  width: 48px;
+  height: 48px;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.banner img {
+  width: 80%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.benefits>div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.benefits>div>div {
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+
+.icon {
+  width: 50px;
+  height: 52px;
+}
+
+.benefits div label {
+  font: 25px 'Rowdies', sans-serif;
+  font-weight: 400;
+}
+
+.benefits div p {
+  font: 15px 'Rowdies', sans-serif;
+  font-weight: 300;
+  max-width: 22ch;
 }
 
 /* Responsivo (Mobile) */
@@ -213,8 +277,9 @@ main h1 {
 
   .products {
     display: flex;
+    margin: 0;
   }
-  
+
   .products div img {
     width: 280px;
     height: 150px;
@@ -222,5 +287,31 @@ main h1 {
 
   .products .product-hidden {
     display: none;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 115px;
+    margin-bottom: 20px;
+  }
+
+  .benefits {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .benefits div label {
+    font: 15px 'Rowdies', sans-serif;
+    font-weight: 400;
+  }
+  
+  .benefits div p {
+    font: 12px 'Rowdies', sans-serif;
+    font-weight: 300;
   }
 }
