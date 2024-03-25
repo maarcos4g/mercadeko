@@ -143,6 +143,11 @@ main h1 {
   margin: 0px 20px;
 }
 
+.products a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
 .products div {
   display: flex;
   flex-direction: column;
@@ -213,6 +218,82 @@ main h1 {
   font: 15px 'Rowdies', sans-serif;
   font-weight: 300;
   max-width: 22ch;
+}
+
+#products-area,  #acessorios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#products-area h3, #acessorios h3 {
+  font: 24px 'DM Sans';
+  font-weight: 700;
+  margin-left: 24px;
+}
+
+.area {
+  display: grid;
+  grid-template-columns: 219px 219px 219px 219px auto;
+  column-gap: 40px;
+  margin: 0px 130px
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 25px 8px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 199px;
+  height: 128px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.card>span {
+  font: 16px 'DM Sans', sans-serif;
+  font-weight: 600;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  color: #F4DE1B;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.card .title {
+  font: 24px 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+.card label {
+  font: 12px 'DM Sans', sans-serif;
+}
+
+.info {
+  margin-bottom: 12px;
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 45px 50px 45px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 
 /* Responsivo (Mobile) */
