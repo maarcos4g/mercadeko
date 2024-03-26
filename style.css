@@ -146,6 +146,10 @@ main h1 {
 .products a {
   text-decoration: none;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .products div {
@@ -220,42 +224,37 @@ main h1 {
   max-width: 22ch;
 }
 
-#products-area,  #acessorios {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#products-area h3, #acessorios h3 {
-  font: 24px 'DM Sans';
+h3 {
+  font: 24px 'DM Sans', sans-serif;
   font-weight: 700;
   margin-left: 24px;
 }
 
 .area {
   display: grid;
-  grid-template-columns: 219px 219px 219px 219px auto;
+  grid-template-columns: auto auto auto auto auto;
   column-gap: 40px;
   margin: 0px 130px
 }
 
-.card {
-  display: flex;
+#card {
   flex-direction: column;
   box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 25px 8px;
   margin-bottom: 20px;
+  width: 200px;
+  height: 300px;
 }
 
-.card img {
+#card img {
   width: 199px;
   height: 128px;
   border-radius: 10px;
   margin-bottom: 16px;
 }
 
-.card>span {
+#card>span {
   font: 16px 'DM Sans', sans-serif;
   font-weight: 600;
 }
@@ -268,17 +267,34 @@ main h1 {
   margin-bottom: 16px;
 }
 
-.card .title {
+#card .title {
   font: 24px 'DM Sans', sans-serif;
   font-weight: 700;
 }
 
-.card label {
+#card label {
   font: 12px 'DM Sans', sans-serif;
+}
+
+.more {
+  padding: 12px 100px;
+  border-radius: 8px;
+  border: 1px solid #3EB461;
+  background-color: transparent;
+  font: 16px 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: #3EB461;
+  cursor: not-allowed;
+}
+
+.more:hover {
+  background-color: #3EB461;
+  color: white;
 }
 
 .info {
   margin-bottom: 12px;
+  margin-top: 16px;
 }
 
 footer {
@@ -338,7 +354,8 @@ footer div {
   .profile div span,
   .avatar,
   .cart,
-  .counter {
+  .counter,
+  .info {
     display: none;
   }
 
@@ -360,6 +377,7 @@ footer div {
   .products {
     display: flex;
     margin: 0;
+    width: 90%;
   }
 
   .products div img {
@@ -370,7 +388,7 @@ footer div {
   .products .product-hidden {
     display: none;
   }
-  
+
   .banner img {
     width: 100%;
     height: 115px;
@@ -381,19 +399,39 @@ footer div {
     margin-left: 16px;
     margin-right: 16px;
   }
-  
+
   .icon {
     width: 35px;
     height: 35px;
   }
-  
+
   .benefits div label {
     font: 15px 'Rowdies', sans-serif;
     font-weight: 400;
   }
-  
+
   .benefits div p {
     font: 12px 'Rowdies', sans-serif;
     font-weight: 300;
+  }
+
+  .area {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    gap: 39px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 95%;
+    align-items: start;
+    margin-top: 30px;
   }
 }

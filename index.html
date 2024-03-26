@@ -44,13 +44,13 @@
         <i data-lucide="chevron-left"></i>
       </button>
       <div class="products">
-        <a href="#products-area">
-          <div class="product-hidden">
+        <div class="product-hidden">
+          <a href="#saude">
             <img src="./assets/images/saude.svg" alt="">
             <span>Saúde</span>
-          </div>
-        </a>
-        <div class="product-hidden">
+          </a>
+        </div>
+        <div>
           <img src="./assets/images/utensilios.svg" alt="">
           <span>Utensílios</span>
         </div>
@@ -58,12 +58,12 @@
           <img src="./assets/images/recipientes.svg" alt="">
           <span>Recipientes</span>
         </div>
-        <a href="#acessorios">
-          <div>
+        <div class="product-hidden">
+          <a href="#acessorios">
             <img src="./assets/images/acessorios.svg" alt="">
             <span>Acessórios</span>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
       <button class="nav">
         <i data-lucide="chevron-right"></i>
@@ -95,10 +95,10 @@
       </div>
     </div>
 
-    <section id="products-area">
+    <section id="saude">
       <h3>Produtos de saúde</h3>
       <div class="area">
-        <div class="card">
+        <div id="card">
           <img src="./assets/images/saude.svg" alt="">
           <span>Escova de dente de bambu</span>
           <div>
@@ -112,7 +112,7 @@
           <label>em <strong>3x</strong> de <strong>10,96</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/saude.svg" alt="">
           <span>Escova de dente de bambu</span>
           <div>
@@ -126,7 +126,7 @@
           <label>em <strong>3x</strong> de <strong>10,96</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/saude.svg" alt="">
           <span>Escova de dente de bambu</span>
           <div>
@@ -140,7 +140,7 @@
           <label>em <strong>3x</strong> de <strong>10,96</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/saude.svg" alt="">
           <span>Escova de dente de bambu</span>
           <div>
@@ -154,7 +154,7 @@
           <label>em <strong>3x</strong> de <strong>10,96</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/saude.svg" alt="">
           <span>Escova de dente de bambu</span>
           <div>
@@ -173,7 +173,7 @@
     <section id="acessorios">
       <h3>Acessórios</h3>
       <div class="area">
-        <div class="card">
+        <div id="card">
           <img src="./assets/images/acessorios.svg" alt="">
           <span>Óculos de sol artesanal polarizados de bambu...</span>
           <div>
@@ -187,7 +187,7 @@
           <label>em <strong>6x</strong> de <strong>27,28</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/acessorios.svg" alt="">
           <span>Óculos de sol artesanal polarizados de bambu...</span>
           <div>
@@ -201,7 +201,7 @@
           <label>em <strong>6x</strong> de <strong>27,28</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/acessorios.svg" alt="">
           <span>Óculos de sol artesanal polarizados de bambu...</span>
           <div>
@@ -215,7 +215,7 @@
           <label>em <strong>6x</strong> de <strong>27,28</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/acessorios.svg" alt="">
           <span>Óculos de sol artesanal polarizados de bambu...</span>
           <div>
@@ -229,7 +229,7 @@
           <label>em <strong>6x</strong> de <strong>27,28</strong> sem juros</label>
         </div>
 
-        <div class="card">
+        <div id="card" class="hidden">
           <img src="./assets/images/acessorios.svg" alt="">
           <span>Óculos de sol artesanal polarizados de bambu...</span>
           <div>
@@ -244,6 +244,10 @@
         </div>
       </div>
     </section>
+
+    <button class="more">
+      Ver mais
+    </button>
 
     <img src="./assets/images/info.svg" class="info" alt="">
   </main>
